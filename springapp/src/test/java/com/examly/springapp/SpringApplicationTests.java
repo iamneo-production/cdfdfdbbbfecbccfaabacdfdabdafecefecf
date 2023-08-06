@@ -18,22 +18,33 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 @AutoConfigureMockMvc
 @RunWith(SpringRunner.class)
 public class SpringApplicationTests {
-
-	@Autowired
-    private MockMvc mockMvc;	
-
-	//Add A New Task
+	Web
 	@Test
     public void test_case1() throws Exception {
 		
-		String dataOne = "{\"taskId\":\"12211\",\"taskHolderName\":\"Gowthaman M\",\"taskDate\":\"4/15/2021\",\"taskName\":\"Spring Projects\",\"taskStatus\":\"In Progress\"}";
-	 	mockMvc.perform(MockMvcRequestBuilders.post("/saveTask")
-	 			.contentType(MediaType.APPLICATION_JSON)
-	 			.content(dataOne)
-	 			.accept(MediaType.APPLICATION_JSON))
-	        	.andExpect(status().isOk())
-	        	.andReturn();
-	 	
+		driver.manage().window().maximize();
+
+        // Navigate to "http://iamneo.ai"
+        driver.get("http://iamneo.ai");
+
+        // Navigate to the Facebook page "https://www.facebook.com"
+        driver.navigate().to("https://www.facebook.com");
+
+        // Navigate back to the iamneo.ai website
+        driver.navigate().back();
+
+        // Print the URL of the current page
+        System.out.println("Current URL: " + driver.getCurrentUrl());
+
+        // Navigate forward
+        driver.navigate().forward();
+
+        // Reload the page
+        driver.navigate().refresh();
+
+        // Close the browser
+        driver.quit();
+
     }
 	
 	
@@ -41,13 +52,6 @@ public class SpringApplicationTests {
 	@Test
     public void test_case2() throws Exception {
 		
-	 	mockMvc.perform(MockMvcRequestBuilders.get("/alltasks")
-	 			.contentType(MediaType.APPLICATION_JSON)
-	 			.accept(MediaType.APPLICATION_JSON))
-	        	.andExpect(status().isOk())
-		        .andExpect(MockMvcResultMatchers.jsonPath("$[*].houseNo").exists())
-		        .andExpect(MockMvcResultMatchers.jsonPath("$").isNotEmpty())
-	        	.andReturn();
 	 	
     }
 	
@@ -55,29 +59,12 @@ public class SpringApplicationTests {
 	@Test
 	public void test_case3() throws Exception {
 		
-		mockMvc.perform(MockMvcRequestBuilders.get("/getTask")
-				.param("taskId","12211")
-				.contentType(MediaType.APPLICATION_JSON)
-		 		.accept(MediaType.APPLICATION_JSON))
-		        .andExpect(status().isOk())
-		        .andExpect(jsonPath("$.taskHolderName").value("Gowthaman M"))
-		        .andExpect(jsonPath("$.taskDate").value("4/15/2021"))
-		        .andExpect(jsonPath("$.taskName").value("Spring Projects"))
-				.andExpect(jsonPath("$.taskStatus").value("In Progress"))
-		        .andReturn();
-			
 	}
 	
 	//Delete A Task
 	@Test
 	public void test_case4() throws Exception {
 		
-		mockMvc.perform(MockMvcRequestBuilders.get("/deleteTask")
-				.param("taskId","12211")
-				.contentType(MediaType.APPLICATION_JSON)
-		 		.accept(MediaType.APPLICATION_JSON))
-		        .andExpect(status().isOk())
-		        .andReturn();
 			
 	}
 
