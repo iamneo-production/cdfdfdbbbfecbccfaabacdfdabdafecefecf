@@ -28,7 +28,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class SpringApplicationTests {
 	WebDriver driver=null;
 	ChromeOptions options = new ChromeOptions();
-	driver = new R
+	driver = new RemoteWebDriver(new URL("http://localhost:4444"),options);
 	@Test
     public void test_case1() throws Exception {
 		
