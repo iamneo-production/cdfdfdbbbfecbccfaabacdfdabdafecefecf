@@ -22,11 +22,22 @@ public class AppTest {
 	}
 
 	@Test
-	public void TestCase_1() throws InterruptedException {
+	public void iamNeo() throws InterruptedException {
+		driver.manage().window().maximize();
+		driver.get("https://iamneo.ai");
+
+	}
+	@Test
+	public void nextPage() throws InterruptedException {
 		
 	}
 	@Test
-	public void TestCase_2() throws InterruptedException {
+	public void backPage() throws InterruptedException {
+		
+
+	}
+	@Test
+	public void currentURL() throws InterruptedException {
 		
 	}
 
