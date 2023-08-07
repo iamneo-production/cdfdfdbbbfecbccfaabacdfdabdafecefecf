@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-07T14:30:33 UTC" name="Suite" finished-at="2023-08-07T14:30:42 UTC" duration-ms="8949">
+  <suite started-at="2023-08-07T14:33:28 UTC" name="Suite" finished-at="2023-08-07T14:33:38 UTC" duration-ms="9732">
     <groups>
     </groups>
-    <test started-at="2023-08-07T14:30:33 UTC" name="Test" finished-at="2023-08-07T14:30:42 UTC" duration-ms="8949">
+    <test started-at="2023-08-07T14:33:28 UTC" name="Test" finished-at="2023-08-07T14:33:38 UTC" duration-ms="9732">
       <class name="ai.iamneo.testing.Testing_Selenium_TestNg.AppTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-07T14:30:33 UTC" name="beforeTest" finished-at="2023-08-07T14:30:37 UTC" duration-ms="3498" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-07T14:33:28 UTC" name="beforeTest" finished-at="2023-08-07T14:33:33 UTC" duration-ms="4512" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="backPage()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-07T14:30:37 UTC" name="backPage" finished-at="2023-08-07T14:30:37 UTC" duration-ms="49" status="PASS">
+        <test-method signature="backPage()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-07T14:33:33 UTC" name="backPage" finished-at="2023-08-07T14:33:33 UTC" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- backPage -->
-        <test-method signature="currentURL()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-07T14:30:37 UTC" name="currentURL" finished-at="2023-08-07T14:30:37 UTC" duration-ms="320" status="PASS">
+        <test-method signature="currentURL()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-07T14:33:33 UTC" name="currentURL" finished-at="2023-08-07T14:33:33 UTC" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- currentURL -->
-        <test-method signature="iamNeo()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-07T14:30:37 UTC" name="iamNeo" finished-at="2023-08-07T14:30:40 UTC" duration-ms="3504" status="PASS">
+        <test-method signature="iamNeo()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-07T14:33:33 UTC" name="iamNeo" finished-at="2023-08-07T14:33:37 UTC" duration-ms="3521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iamNeo -->
-        <test-method signature="nextPage()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-07T14:30:40 UTC" name="nextPage" finished-at="2023-08-07T14:30:42 UTC" duration-ms="1206" status="PASS">
+        <test-method signature="nextPage()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-07T14:33:37 UTC" name="nextPage" finished-at="2023-08-07T14:33:38 UTC" duration-ms="994" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nextPage -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-07T14:30:42 UTC" name="afterTest" finished-at="2023-08-07T14:30:42 UTC" duration-ms="342" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@29176cc1]" started-at="2023-08-07T14:33:38 UTC" name="afterTest" finished-at="2023-08-07T14:33:38 UTC" duration-ms="336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
