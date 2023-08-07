@@ -25,20 +25,26 @@ public class AppTest {
 	public void iamNeo() throws InterruptedException {
 		driver.manage().window().maximize();
 		driver.get("https://iamneo.ai");
+		String title = driver.getTitle();
+		
 
 	}
 	@Test
 	public void nextPage() throws InterruptedException {
-		
+
+		driver.navigate().to("https://www.facebook.com");
+
 	}
 	@Test
 	public void backPage() throws InterruptedException {
-		
+		driver.navigate().back();
 
 	}
 	@Test
 	public void currentURL() throws InterruptedException {
-		
+		System.out.println(driver.getCurrentUrl());
+		driver.navigate().forward();
+		driver.navigate().refresh();
 	}
 
 	@AfterTest
