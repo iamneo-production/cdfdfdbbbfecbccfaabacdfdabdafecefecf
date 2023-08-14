@@ -24,7 +24,7 @@ public class AppTest {
 	@Test
 	public void iamNeo() throws InterruptedException {
 		driver.manage().window().maximize();
-		driver.get("https://www.google.com");
+		driver.get("http://www.google.com");
 		System.out.println(driver.getTitle());
 
 
